@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+</head>
+<body>
+    <div name="title" id="title">
+        <h1>{% block title %}{% endblock %}</h1>
+    </div>
+    <div name="content" id="content">
+        <!--blocks are used to guide the template-->
+        <!--can be overriden by child html-->
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
